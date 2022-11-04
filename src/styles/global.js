@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     //pode colocar todo o css que por padrão a minha api já tenha
 
     *{
-        margin: 0;
+        margin: 5;
         padding: 0;
         box-sizing: border-box;
         background-color: lavender;
@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body, input, textarea, button {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Oswald;
         font-size: 1rem; //16px
     }
 
