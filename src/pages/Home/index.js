@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Title } from './styled.js'
-import { Link, useNavigate } from 'react-router-dom'
+import { Container, Title, Logo, MainMenu, Link, Category } from './styled.js'
+import { useNavigate } from 'react-router-dom'
+import logo1 from '../../assets/img/logo1.jpg'
+import { ButtonCategory } from '../../components/ButtonCategory/index.js';
 
 export function Home() {
 
@@ -13,14 +15,28 @@ export function Home() {
     */
     return(
         <Container>
-            <Title>Home</Title>
-            <Link to="/login">Login</Link>
-            <Link to="/about">Sobre Nós</Link>
-            <Link to="/products">Produtos</Link>
-            <Link to="/clients">Clientes</Link>
-            <Link to="/cart">Carrinho</Link>
+          
+            <Logo src={logo1} />
+                        
+            <MainMenu>
+                <Link to="/login">Login</Link>
+                <Link to="/about">Quem somos</Link>
+                <Link to="/cart">Carrinho</Link>
+            </MainMenu>
+
+            <Category>
+                <ButtonCategory>FILOSOFIA</ButtonCategory>
+                <ButtonCategory>HISTÓRIA</ButtonCategory>
+                <ButtonCategory>LITERATURA</ButtonCategory>
+                <ButtonCategory>GEOGRAFIA</ButtonCategory>
+            </Category>
+
         </Container>
 
+
+        /*  <Link to="/products">Produtos</Link>
+            <Link to="/clients">Clientes</Link> */
+        
         /*
 
         <div style={{display: 'flex', flexDirection: 'column'}}>
