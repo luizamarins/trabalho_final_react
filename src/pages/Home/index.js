@@ -16,6 +16,7 @@ export function Home() {
     // }
 
     return(
+
         <Container>
           
             <Logo src={logo1} />
@@ -34,20 +35,12 @@ export function Home() {
             </Category>
 
         </Container>
+        */
 
 
         /*  <Link to="/products">Produtos</Link>
             <Link to="/clients">Clientes</Link> */
         
-        /*
-        <Container>
-            <Link to="/products/filosofia">Filosofia</Link>
-            <Link to="/products/ciencias-exatas">Ciências Exatas</Link>
-            <Link to="/clients/historia">História</Link>
-            <Link to="/literatura">Literatura</Link>
-        </Container>
-        */
-
         /*
 
         <div style={{display: 'flex', flexDirection: 'column'}}>
