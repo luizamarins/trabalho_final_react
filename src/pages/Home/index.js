@@ -35,7 +35,7 @@ export function Home() {
             </Category>
 
         </Container>
-        */
+        
 
 
         /*  <Link to="/products">Produtos</Link>
