@@ -34,7 +34,7 @@ export function Products() {
                 product.map(res => {
                     return(
                         <>
-                        <img style={{width:150, height:150}} src={res.fotoLink}/>
+                        <img style={{width:200, height:200}} src={res.fotoLink}/>
                         <span>{res.nome}</span>
                         <span>{res.descricao}</span>
                         <span>{res.valor}</span>

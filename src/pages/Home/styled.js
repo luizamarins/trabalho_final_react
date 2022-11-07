@@ -1,37 +1,76 @@
 import styled from 'styled-components'
 import { Link as BaseLink } from 'react-router-dom'
 
-
 export const Container = styled.div`
+
     display: flex;
     align-items: center;
     flex-direction: column;
+`;
+
+export const MainMenu = styled.div`
+
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 100%;
+    float: right;
 
 `;
 
-export const Title = styled.h1`
-    color: darkorchid !important;
+export const Headers = styled.div`
+
+    /* height: 150px;
+    width: 100%; */
+    //background-color: gray;
+    display: flex;
+    justify-content: space-between;
+
+
+    /* div {
+        float: right;
+        padding: 10px;
+        margin-right: 20px;
+    } */
+
+    ul {
+        margin: none;
+        text-align: center;
+        margin: none;
+        font-family: Oswald;
+        font-size: 2rem;
+        display: inline-block;
+    }
+
 `;
 
 export const Logo = styled.img`
-    width: 70%;
-    object-fit: scale-down;
-    height: 220px;
 
-`
-export const MainMenu = styled.div`
-    margin-top: 35px;
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-`
+    object-fit: scale-down;
+    width: 40%;
+    height: 40%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px;
+
+`;
 export const Link = styled(BaseLink)`
+
     text-decoration: none;
     &:hover {color: gray};
-`
+    display: inline-flex;
+    padding: 0em 1.5em;
+    margin-top: 14px;
+    color: darkorchid;
+`;
 export const Category = styled.div`
-    display: flex;
-    gap: 20px;
-    margin-top: 50px;
 
-`
+    display: inline-flex;
+    gap: 20px;
+    margin-top: 100px;
+    align-items: center;
+    flex-direction: column;
+`;
