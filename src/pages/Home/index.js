@@ -1,46 +1,56 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Title, Logo, MainMenu, Link, Category } from './styled.js'
-import { useNavigate } from 'react-router-dom'
+import { Container, Logo, MainMenu, Link, Category, Headers } from './styled.js'
+//import { useNavigate } from 'react-router-dom'
 import logo1 from '../../assets/img/logo1.jpg'
 import { ButtonCategory } from '../../components/ButtonCategory/index.js';
+//import productService from '../../services/requests/productService.js'
 
 export function Home() {
-    
-// entender isso aqui:
 
+    // entender isso aqui:
+    
     // const navigate = useNavigate();
 
     // function handleGoProducts() {
     //     navigate(`/produto`, {state: {
     //     }})
     // }
+    
+    return (
 
-    return(
+        <>
 
-        <Container>
-          
-            <Logo src={logo1} />
-                        
-            <MainMenu>
-                <Link to="/login">Login</Link>
-                <Link to="/about">Quem somos</Link>
-                <Link to="/cart">Carrinho</Link>
-            </MainMenu>
+            <Headers>
 
-            <Category>
-                <ButtonCategory>FILOSOFIA</ButtonCategory>
-                <ButtonCategory>HISTÓRIA</ButtonCategory>
-                <ButtonCategory>LITERATURA</ButtonCategory>
-                <ButtonCategory>GEOGRAFIA</ButtonCategory>
-            </Category>
+                <Logo src={logo1} />
 
-        </Container>
-        */
+                <ul>
+                    <Link to="/login">Login</Link>
+                    <Link to="/quem-somos">Quem somos</Link>
+                    <Link to="/produtos">Produtos</Link>
+                    <Link to="/clientes">Clientes</Link>
+                    <Link to="/carrinho">Carrinho</Link>
+                </ul>
 
+                {/* <div class="nav">
+                    <label for="toggle">☰</label>
+                </div> */}
 
-        /*  <Link to="/products">Produtos</Link>
-            <Link to="/clients">Clientes</Link> */
-        
+            </Headers>
+
+            <Container>
+
+                <Category>
+                    <ButtonCategory>FILOSOFIA</ButtonCategory>
+                    <ButtonCategory>HISTÓRIA</ButtonCategory>
+                    <ButtonCategory>LITERATURA</ButtonCategory>
+                    <ButtonCategory>GEOGRAFIA</ButtonCategory>
+                </Category>
+
+            </Container>
+
+        </>
+
         /*
 
         <div style={{display: 'flex', flexDirection: 'column'}}>
