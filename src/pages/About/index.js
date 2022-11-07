@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Container, Content } from './styled.js'
 
-
 export function About() {
 
     const [selected, setSelected] = useState("Sobre")
@@ -16,9 +15,13 @@ export function About() {
                     <h1>Promover o conhecimento para todos de maneira dinâmica e eficiente.</h1>
                 );
             case "Contato":
-                return(
-                    <h1>(24) 9855-5786 </h1>                
+                return (
+                    <>
+                    <h1>(24) 9855-5786</h1> 
+                    <h1>biblion@gmail.com</h1>
+                    </>
                 );
+            
             default:
                 break;
         }
@@ -42,7 +45,9 @@ export function About() {
                 
             </Content>
 
-            <img src={"https://media.giphy.com/media/VuoD5AyASHyf9aJ9n4/giphy.gif"} alt="foto-livros"/>
+            {/* <img src={"https://media.giphy.com/media/VuoD5AyASHyf9aJ9n4/giphy.gif"} alt="foto-livros" /> */}
+
+            <img src={require("../../assets/img/logo-livros.gif")} alt="foto-livros"/>
         
         </Container>
     )
