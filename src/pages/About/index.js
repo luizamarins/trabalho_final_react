@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Container, Content } from './styled.js'
 
+
 export function About() {
 
     const [selected, setSelected] = useState("Sobre")
@@ -8,15 +9,15 @@ export function About() {
         switch (selected) {
             case "Sobre":
                 return(
-                    <h1>Somos uma livraria online!</h1>
+                    <h1>Uma livraria online que leva o conhecimento até a palma de suas mãos!</h1>
                 );
             case "Missão":
                 return(
-                    <h1>Disseminar a leitura!</h1>
+                    <h1>Promover o conhecimento para todos de maneira dinâmica e eficiente.</h1>
                 );
             case "Contato":
                 return(
-                    <h1>telefone e email</h1>
+                    <h1>(24) 9855-5786 </h1>                
                 );
             default:
                 break;
@@ -26,11 +27,12 @@ export function About() {
 
     return (
         <Container>
-            <h2>A Livraria</h2>
-            <img src={"https://www.dlojavirtual.com/wp-content/uploads/2015/09/loja-virtual-de-livros.jpg"} alt="foto-livros"/>
-
+                       
+            <h2>A BiblioOn</h2>
+            
             <Content>
                 <header>
+                    
                     <span onClick={() => setSelected("Sobre")}>Sobre Nós</span>
                     <span onClick={() => setSelected("Missão")}>Missão</span>
                     <span onClick={() => setSelected("Contato")}>Contato</span>
@@ -39,6 +41,9 @@ export function About() {
                 {selectedContent()}
                 
             </Content>
+
+            <img src={"https://media.giphy.com/media/VuoD5AyASHyf9aJ9n4/giphy.gif"} alt="foto-livros"/>
+        
         </Container>
     )
 }

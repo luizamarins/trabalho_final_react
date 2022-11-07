@@ -3,22 +3,17 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    //background-color: whitesmoke;
-    height: 100hv; //como isso funciona?
-    color: grey;
+    height: 150hv; //como isso funciona?
+    color: darkorchid;
     align-items: center;
 
     img {
-        width: 100%;
+        width: 50%;
         margin-top: 30px;
-        //height: 300px ;
-        //border: 2px solid black;
-        //border-radius: 30px;
     }
 
     h2 {
         margin-top: 30px;
-        //background-color: black;
     }
 `;
 
@@ -27,11 +22,12 @@ export const Content = styled.div`
     width: 100%;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 10px;
+    font-size: 25px;
 
     span {
-        font-size: 25px;
-        margin-right: 15px;
+        font-size: 30px;
+        margin-right: 60px;
         cursor: pointer;
 
         :hover{
@@ -43,7 +39,7 @@ export const Content = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        width: 100%;
+        width: 50%;
         margin-bottom: 30px;
     }
 `;
