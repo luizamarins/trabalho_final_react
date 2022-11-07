@@ -6,6 +6,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+
 `;
 
 export const MainMenu = styled.div`
@@ -18,6 +19,7 @@ export const MainMenu = styled.div`
     height: 100%;
     float: right;
 
+>>>>>>> main
 `;
 
 export const Headers = styled.div`
