@@ -1,19 +1,16 @@
 import {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-    //pode colocar todo o css que por padrão a minha api já tenha
 
     *{
-        margin: 1;
+        margin: 0;
         padding: 0;
         box-sizing: border-box;
-       
+        color: darkorchid;
     }
 
     body {
-
         background-color: #FFFD59;
-    
     }
 
     input, button {
