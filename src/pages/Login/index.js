@@ -1,9 +1,8 @@
-import { Container, Logo, Link, Headers } from "./styled";
 import { useContext, useState } from "react";
 import AuthContext from "../../context/authentication";
-import logo1 from '../../assets/img/logo1.jpg'
-import login from '../../assets/img/login.png'
+import logo1 from '../../assets/img/logo1.jpg';
 import Footer from "../../components/Footer";
+import { Container, Headers, Link, Logo } from '../../pages/Login/styled';
 
 export function Login() {
     const { signIn } = useContext(AuthContext)
@@ -40,7 +39,7 @@ export function Login() {
                 justifyContent: "center",
             }}>
                 <h1>Login</h1>
-                <Logo src={login} />
+
                 <input style={{ marginTop: 10, padding: 5 }}
                     placeholder='e-mail'
                     value={email}

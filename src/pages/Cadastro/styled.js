@@ -45,7 +45,6 @@ export const Link = styled(BaseLink)`
 `;
 
 /*Meio*/
-
 export const Container = styled.div`
 
 padding: 100px;
