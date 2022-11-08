@@ -12,9 +12,8 @@ export const Headers = styled.div`
     ul {
         margin: none;
         text-align: center;
-        margin: none;
         font-family: Oswald;
-        font-size: 2rem;
+        font-size: 1.6rem;
         display: inline-block;
     }
 `;
@@ -51,6 +50,6 @@ padding: 100px;
 h1 {
     margin-bottom: 50px;
     margin-top: 50px;
-    color: black;
+    color: #323242;
 }
 `;
