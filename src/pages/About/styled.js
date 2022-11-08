@@ -12,9 +12,8 @@ export const Headers = styled.div`
     ul {
         margin: none;
         text-align: center;
-        margin: none;
         font-family: Oswald;
-        font-size: 2rem;
+        font-size: 1.6rem;
         display: inline-block;
     }
 `;
@@ -51,9 +50,9 @@ export const Container = styled.div`
 padding: 100px;
 
 h1 {
-    color: black;
+    color: #323242;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 `;
 
@@ -63,8 +62,8 @@ export const Content = styled.div`
     width: 100%;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
-    font-size: 25px;
+    margin-top: 15px;
+    font-size: 20px;
 
     header{
         background-color: whitesmoke;

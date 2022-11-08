@@ -23,7 +23,7 @@ export function Router() {
     return (
         <Routes>
 
-            <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
             <Route path='/quem-somos' element={<About />} />
             <Route path='/cadastro' element={<Cadastro />} />
             <Route path='/login' element={<Login />} />

@@ -12,9 +12,8 @@ export const Headers = styled.div`
     ul {
         margin: none;
         text-align: center;
-        margin: none;
         font-family: Oswald;
-        font-size: 2rem;
+        font-size: 1.6rem;
         display: inline-block;
     }
 `;
