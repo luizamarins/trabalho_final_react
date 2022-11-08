@@ -5,9 +5,9 @@ import { PageNotFound } from '../pages/PageNotFound'
 import { About } from '../pages/About'
 import { Cart } from '../pages/Cart'
 import { Cadastro } from '../pages/Cadastro'
-//import { Login } from '../pages/Login'
-//import { useContext } from 'react'
-//import AuthContext from '../context/authentication'
+import { Login } from '../pages/Login'
+// import { useContext } from 'react'
+// import AuthContext from '../context/authentication'
 
 export function Router() {
     // const {isAuthenticated} = useContext(AuthContext)
@@ -26,6 +26,7 @@ export function Router() {
             <Route path='/home' element={<Home />} />
             <Route path='/quem-somos' element={<About />} />
             <Route path='/cadastro' element={<Cadastro />} />
+            <Route path='/login' element={<Login />} />
 
             <Route path='/produtos' element={<Products />}>
                 <Route path=':id' element={<Products />} />

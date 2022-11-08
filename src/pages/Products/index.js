@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import productService from '../../services/requests/productService';
-import { Container, Logo, Link, Headers } from './styled.js'
-import logo1 from '../../assets/img/logo1.jpg'
+import { Container, Logo, Link, Headers } from './styled.js';
+import logo1 from '../../assets/img/logo1.jpg';
 import Footer from '../../components/Footer';
 
 export function Products() {
@@ -23,10 +23,10 @@ export function Products() {
 
             <Headers>
 
-                    <Logo src={logo1} />
+                <Logo src={logo1} />
 
                 <ul>
-                    <Link to="/home">Home</Link>
+                    <Link to="/">Home</Link>
                     <Link to="/quem-somos">Quem somos</Link>
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/carrinho">Carrinho</Link>
