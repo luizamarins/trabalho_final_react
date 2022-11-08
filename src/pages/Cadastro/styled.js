@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import { Link as BaseLink } from 'react-router-dom'
 
 /*Header*/
@@ -59,25 +59,4 @@ h1 {
     margin-top: 50px;
     color: black;
 }
-
-span {
-    display: flex;
-    color: black;
-}
-
-.product-card{
-    padding: 18px;
-}
-
-button{
-    height: 100px;
-    width:  250px;
-    background-color: #992ECA;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-}
-
 `;

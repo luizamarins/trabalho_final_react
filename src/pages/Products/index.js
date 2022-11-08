@@ -1,47 +1,60 @@
-//import {useLocation} from 'react-router-dom'
 import { useState, useEffect } from 'react';
 import productService from '../../services/requests/productService';
-import { Container } from '../Home/styled';
+import { Container, Logo, Link, Headers } from './styled.js'
+import logo1 from '../../assets/img/logo1.jpg'
+//import productService from '../../services/requests/productService.js'
 
 export function Products() {
-    //const location = useLocation();
-    
-    const [product, setProducts] = useState([]);
-    
-        useEffect(() => {
-            productService.getProducts().then(response => {
-                console.log(response);
-                setProducts(response.data);
-            }).catch(error => {
-                console.log(error);
-            })
-        }, [])
 
-    // function handleRegisterProducts(){
-        
-    //     productService.postProducts(product).then(res => {
-    //         console.log(res);
-    //     }).catch(error => {
-    //         console.log(error);
-    //     })
-    // }
+    const [products, setProducts] = useState([]);
 
-    return(
-        <Container>
-            <h1>Produtos</h1>
+    useEffect(() => {
+        productService.getProducts().then(response => {
+            console.log(response);
+            setProducts(response.data);
+        }).catch(error => {
+            console.log(error);
+        })
+    }, [])
 
-            {
-                product.map(res => {
-                    return(
-                        <>
-                        <img style={{width:200, height:200}} src={res.fotoLink}/>
-                        <span>{res.nome}</span>
-                        <span>{res.descricao}</span>
-                        <span>{res.valor}</span>
-                        </>
-                    )
-                })
-            }
-        </Container>
+    return (
+
+        <>
+
+            <Headers>
+
+                <Logo src={logo1} />
+
+                <ul>
+                    <Link to="/quem-somos">Quem somos</Link>
+                    <Link to="/produtos">Produtos</Link>
+                    <Link to="/carrinho">Carrinho</Link>
+                    <Link to="/login">Login</Link>
+                </ul>
+
+                {/* <div class="nav">
+                    <label for="toggle">☰</label>
+                </div> */}
+
+            </Headers>
+
+            <Container>
+                <h1>Produtos</h1>
+
+                {
+                    products.map(res => {
+                        return (
+                            <div className={"product-card"}key={res.id}>
+                                <img style={{ width: 200, height: 200 }} src={res.fotoLink} />
+                                <span>{res.nome}</span>
+                                <span>{res.descricao}</span>
+                                <span>R$ {res.valor},00</span>
+                                <button>COMPRAR</button>
+                            </div>
+                        )
+                    })
+                }
+            </Container>
+        </>
     );
 }
