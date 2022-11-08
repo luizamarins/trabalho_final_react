@@ -1,7 +1,27 @@
 import styled from 'styled-components'
 import { Link as BaseLink } from 'react-router-dom'
 
-/*Header*/
+export const Container = styled.div`
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+`;
+
+export const MainMenu = styled.div`
+
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 100%;
+    float: right;
+
+`;
+
+>>>>>>> main
 export const Headers = styled.div`
 
     position: fixed;
