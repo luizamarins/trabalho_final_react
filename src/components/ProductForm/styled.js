@@ -1,31 +1,30 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
+  padding: 50px;
+  text-align: center;
+  justify-content: center;
 
-padding: 50px;
-text-align: center;
-justify-content: center;
-
-input {
+  input {
     margin: 25px;
     border-radius: 10px;
     border: none;
 
     ::placeholder {
-        font-size: 30px;
-        text-align: center;
+      font-size: 30px;
+      text-align: center;
     }
-}
+  }
 
-button{
+  button {
     height: 100px;
-    width:  250px;
-    background-color: #992ECA;
+    width: 250px;
+    background-color: #992eca;
     color: white;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
     border: none;
     margin: 15px;
-}
+  }
 `;
