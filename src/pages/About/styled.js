@@ -59,15 +59,6 @@ h1 {
     margin-top: 50px;
     color: black;
 }
-
-img {
-    width: 50%;
-    margin-top: 30px;
-}
-
-h2 {
-    margin-top: 30px;
-}
 `;
 
 export const Content = styled.div`

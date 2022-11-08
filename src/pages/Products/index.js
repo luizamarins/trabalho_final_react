@@ -30,6 +30,7 @@ export function Products() {
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/carrinho">Carrinho</Link>
                     <Link to="/login">Login</Link>
+                    <Link to="/cadastro">Cadastro</Link>
                 </ul>
 
 
@@ -46,7 +47,7 @@ export function Products() {
                                 <span>{res.nome}</span>
                                 <span>{res.descricao}</span>
                                 <span>R$ {res.valor},00</span>
-                                <button>COMPRAR</button>
+                                <button onClick={{}}>COMPRAR</button>
                             </div>
                         )
                     })

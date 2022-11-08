@@ -16,6 +16,7 @@ export function Cart() {
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/carrinho">Carrinho</Link>
                     <Link to="/login">Login</Link>
+                    <Link to="/cadastro">Cadastro</Link>
                 </ul>
 
             </Headers>

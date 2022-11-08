@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { Container, Content } from './styled.js'
+import { Link } from 'react-router-dom';
+import { Container, Logo, Headers, Content } from './styled.js'
+import logo1 from '../../assets/img/logo1.jpg'
 
 export function About() {
 
@@ -29,9 +31,24 @@ export function About() {
     }
 
     return (
+
+        <>
+        <Headers>
+    <Logo src={logo1} />
+  
+    <ul>
+        <Link to="/quem-somos">Quem somos</Link>
+        <Link to="/produtos">Produtos</Link>
+        <Link to="/carrinho">Carrinho</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/cadastro">Cadastro</Link>
+    </ul>
+  
+  </Headers>
+  
         <Container>
                        
-            <h3>Quem somos</h3>
+            {/* <h3>Quem somos</h3>
             
             <Content>
                 <header>
@@ -43,10 +60,12 @@ export function About() {
 
                 {selectedContent()}
                 
-            </Content>
+            </Content> */}
 
            {/* <img src={require("../../assets/img/logo-livros.gif")} alt="foto-livros"/> */}
         
         </Container>
+
+        </>
     )
 }
