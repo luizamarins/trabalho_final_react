@@ -1,4 +1,3 @@
-import {useNavigate} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import productService from '../../services/requests/productService';
 import { Container, Logo, Link, Headers } from './styled.js'
@@ -6,8 +5,6 @@ import logo1 from '../../assets/img/logo1.jpg'
 //import productService from '../../services/requests/productService.js'
 
 export function Products() {
-
-    const navigate = useNavigate();
 
     const [products, setProducts] = useState([]);
 
@@ -35,9 +32,9 @@ export function Products() {
                     <Link to="/login">Login</Link>
                 </ul>
 
-                <div class="nav">
+                {/* <div class="nav">
                     <label for="toggle">☰</label>
-                </div>
+                </div> */}
 
             </Headers>
 
@@ -47,12 +44,13 @@ export function Products() {
                 {
                     products.map(res => {
                         return (
-                            <>
+                            <div className={"product-card"}key={res.id}>
                                 <img style={{ width: 200, height: 200 }} src={res.fotoLink} />
                                 <span>{res.nome}</span>
                                 <span>{res.descricao}</span>
                                 <span>R$ {res.valor},00</span>
-                            </>
+                                <button>COMPRAR</button>
+                            </div>
                         )
                     })
                 }

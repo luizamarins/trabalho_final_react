@@ -26,3 +26,5 @@ export const GlobalStyle = createGlobalStyle`
         font-family: Oswald;
         font-size: 3rem;
     }
+
+    `;

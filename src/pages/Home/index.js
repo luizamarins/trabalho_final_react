@@ -1,20 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Logo, Link, Category, Headers } from './styled.js'
-//import { useNavigate } from 'react-router-dom'
 import logo1 from '../../assets/img/logo1.jpg'
 import { ButtonCategory } from '../../components/ButtonCategory/index.js';
 //import productService from '../../services/requests/productService.js'
 
 export function Home() {
-
-    // entender isso aqui:
-
-    // const navigate = useNavigate();
-
-    // function handleGoProducts() {
-    //     navigate(`/produto`, {state: {
-    //     }})
-    // }
 
     return (
 
@@ -30,9 +20,7 @@ export function Home() {
                         <Link to="/login">Login</Link>
                     </ul>
 
-                    <div class="nav">
-                        <label for="toggle">☰</label>
-                    </div>
+                    <label for="toggle">☰</label>
 
             </Headers>
 
