@@ -45,9 +45,7 @@ export function About() {
                 
             </Content>
 
-            {/* <img src={"https://media.giphy.com/media/VuoD5AyASHyf9aJ9n4/giphy.gif"} alt="foto-livros" /> */}
-
-            <img src={require("../../assets/img/logo-livros.gif")} alt="foto-livros"/>
+           <img src={require("../../assets/img/logo-livros.gif")} alt="foto-livros"/>
         
         </Container>
     )
