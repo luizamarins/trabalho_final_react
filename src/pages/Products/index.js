@@ -49,7 +49,7 @@ export function Products() {
                                 <span>{res.nome}</span>
                                 <span>{res.descricao}</span>
                                 <span>R$ {res.valor},00</span>
-                                <button>COMPRAR</button>
+                                <button onClick={{}}>COMPRAR</button>
                             </div>
                         )
                     })
