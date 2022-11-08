@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Logo, Link, Headers, Container } from './styled.js'
 //import { useNavigate } from 'react-router-dom'
 import logo1 from '../../assets/img/logo1.jpg'
+import Footer from '../../components/Footer/index.js';
 //import productService from '../../services/requests/productService.js'
 
 export function Cart() {
@@ -27,6 +28,8 @@ export function Cart() {
         </div>
             </Container>
             
+            <Footer/>
+
         </>
     );
 }

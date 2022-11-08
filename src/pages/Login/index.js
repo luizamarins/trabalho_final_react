@@ -1,6 +1,7 @@
 import { Container } from "./styled";
 import { useContext, useState } from "react";
 import AuthContext from "../../context/authentication";
+import Footer from "../../components/Footer";
 
 export function Login() {
     const { signIn } = useContext(AuthContext)
@@ -51,6 +52,8 @@ export function Login() {
                 onClick={handleSignIn}
                 style={{ marginTop: 10, padding: 5, cursor: 'pointer' }}>entrar</button>
         </Container>
+
+        <Footer/>
 
         </>
     );

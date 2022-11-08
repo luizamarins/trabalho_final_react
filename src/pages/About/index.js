@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Logo, Headers, Content } from './styled.js'
 import logo1 from '../../assets/img/logo1.jpg'
+import Footer from '../../components/Footer/index.js';
 
 export function About() {
 
@@ -66,6 +67,9 @@ export function About() {
         
         </Container>
 
+        <Footer/>
+
         </>
+
     )
 }

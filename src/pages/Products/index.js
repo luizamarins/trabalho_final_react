@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import productService from '../../services/requests/productService';
 import { Container, Logo, Link, Headers } from './styled.js'
 import logo1 from '../../assets/img/logo1.jpg'
+import Footer from '../../components/Footer';
 //import productService from '../../services/requests/productService.js'
 
 export function Products() {
@@ -53,6 +54,9 @@ export function Products() {
                     })
                 }
             </Container>
+
+            <Footer/>
+
         </>
     );
 }

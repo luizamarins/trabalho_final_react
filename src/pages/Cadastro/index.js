@@ -4,6 +4,7 @@ import logo1 from '../../assets/img/logo1.jpg';
 import { ButtonCategory } from '../../components/ButtonCategory/index.js';
 import productService from '../../services/requests/productService.js'
 import { ProductForm } from '../../components/ProductForm/index.js';
+import Footer from '../../components/Footer/index.js';
 
 
 export function Cadastro() {
@@ -37,6 +38,8 @@ export function Cadastro() {
       <Container>
          <ProductForm props={postProducts} />
       </Container>
+
+      <Footer/>
 
       </>
    )
