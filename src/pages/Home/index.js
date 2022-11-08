@@ -12,15 +12,15 @@ export function Home() {
         <>
             <Headers>
 
-                    <Logo src={logo1} />
+                <Logo src={logo1} />
 
-                    <ul>
-                        <Link to="/quem-somos">Quem somos</Link>
-                        <Link to="/produtos">Produtos</Link>
-                        <Link to="/carrinho">Carrinho</Link>
-                        <Link to="/login">Login</Link>
-                        <Link to="/cadastro">Cadastro</Link>
-                    </ul>
+                <ul>
+                    <Link to="/quem-somos">Quem somos</Link>
+                    <Link to="/produtos">Produtos</Link>
+                    <Link to="/carrinho">Carrinho</Link>
+                    <Link to="/login">Login</Link>
+                    <Link to="/cadastro">Cadastro</Link>
+                </ul>
 
             </Headers>
 
@@ -34,8 +34,8 @@ export function Home() {
                 </Category>
 
             </Container>
-        
-        <Footer/>
+
+            <Footer />
 
         </>
 

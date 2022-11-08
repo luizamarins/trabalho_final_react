@@ -1,6 +1,8 @@
-import { Container } from "./styled";
+import { Container, Logo, Link, Headers } from "./styled";
 import { useContext, useState } from "react";
 import AuthContext from "../../context/authentication";
+import logo1 from '../../assets/img/logo1.jpg'
+import login from '../../assets/img/login.png'
 import Footer from "../../components/Footer";
 
 export function Login() {
@@ -30,30 +32,31 @@ export function Login() {
 
             </Headers>
 
-        <Container style={{
-            display: "flex",
-            height: '98vh',
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-        }}>
-            <h1>Login</h1>
-            <input style={{ marginTop: 10, padding: 5 }}
-                placeholder='e-mail'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-            />
-            <input style={{ marginTop: 10, padding: 5 }}
-                placeholder='senha'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-            />
-            <button
-                onClick={handleSignIn}
-                style={{ marginTop: 10, padding: 5, cursor: 'pointer' }}>entrar</button>
-        </Container>
+            <Container style={{
+                display: "flex",
+                height: '98vh',
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+            }}>
+                <h1>Login</h1>
+                <Logo src={login} />
+                <input style={{ marginTop: 10, padding: 5 }}
+                    placeholder='e-mail'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <input style={{ marginTop: 10, padding: 5 }}
+                    placeholder='senha'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <button
+                    onClick={handleSignIn}
+                    style={{ marginTop: 10, padding: 5, cursor: 'pointer' }}>entrar</button>
+            </Container>
 
-        <Footer/>
+            <Footer />
 
         </>
     );

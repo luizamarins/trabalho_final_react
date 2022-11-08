@@ -3,7 +3,6 @@ import productService from '../../services/requests/productService';
 import { Container, Logo, Link, Headers } from './styled.js'
 import logo1 from '../../assets/img/logo1.jpg'
 import Footer from '../../components/Footer';
-//import productService from '../../services/requests/productService.js'
 
 export function Products() {
 
@@ -24,7 +23,7 @@ export function Products() {
 
             <Headers>
 
-                <Logo src={logo1} />
+                    <Logo src={logo1} />
 
                 <ul>
                     <Link to="/quem-somos">Quem somos</Link>
@@ -43,7 +42,7 @@ export function Products() {
                 {
                     products.map(res => {
                         return (
-                            <div className={"product-card"}key={res.id}>
+                            <div className={"product-card"} key={res.id}>
                                 <img style={{ width: 200, height: 200 }} src={res.fotoLink} />
                                 <span>{res.nome}</span>
                                 <span>{res.descricao}</span>
@@ -55,7 +54,7 @@ export function Products() {
                 }
             </Container>
 
-            <Footer/>
+            <Footer />
 
         </>
     );

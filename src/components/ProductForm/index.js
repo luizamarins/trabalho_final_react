@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Container } from "../../components/ProductForm/styled"
 
-export function ProductForm({props}) {
+export function ProductForm({ props }) {
 
     const [product, setProduct] = useState({
         nome: "",
@@ -24,7 +24,6 @@ export function ProductForm({props}) {
     return (
         <Container>
             <form>
-                <h2>Cadastro</h2>
                 <div className="cadastro">
                     <div className="user-box">
                         <input placeholder="nome" type="text" required onChange={event => setProduct({ ...product, nome: event.target.value })}></input>

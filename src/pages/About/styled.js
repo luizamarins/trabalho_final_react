@@ -9,12 +9,6 @@ export const Headers = styled.div`
     display: flex;
     justify-content: space-between;
 
-    div {
-        float: right;
-        padding: 10px;
-        margin-right: 20px;
-    }
-
     ul {
         margin: none;
         text-align: center;
@@ -50,14 +44,16 @@ export const Link = styled(BaseLink)`
     color: darkorchid;
 `;
 
+/*Meio*/
+
 export const Container = styled.div`
 
 padding: 100px;
 
 h1 {
-    margin-bottom: 50px;
-    margin-top: 50px;
     color: black;
+    margin: 0;
+    margin-top: 50px;
 }
 `;
 
@@ -70,9 +66,16 @@ export const Content = styled.div`
     margin-top: 10px;
     font-size: 25px;
 
+    header{
+        background-color: whitesmoke;
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 70px;
+    }
+
     span {
-        font-size: 30px;
-        margin-right: 60px;
+        font-size: 35px;
+        margin: 60px;
         cursor: pointer;
 
         :hover{

@@ -8,13 +8,7 @@ export const Headers = styled.div`
     background-color: #FFFD59;
     display: flex;
     justify-content: space-between;
-
-    div {
-        float: right;
-        padding: 10px;
-        margin-right: 20px;
-    }
-
+    
     ul {
         margin: none;
         text-align: center;

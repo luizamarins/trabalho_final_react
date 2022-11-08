@@ -9,12 +9,6 @@ export const Headers = styled.div`
     display: flex;
     justify-content: space-between;
 
-    div {
-        float: right;
-        padding: 10px;
-        margin-right: 20px;
-    }
-
     ul {
         margin: none;
         text-align: center;
@@ -49,6 +43,8 @@ export const Link = styled(BaseLink)`
     margin-top: 14px;
     color: darkorchid;
 `;
+
+/*Meio*/
 
 export const Container = styled.div`
 

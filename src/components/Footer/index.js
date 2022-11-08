@@ -1,17 +1,5 @@
 import React from "react";
-
-import {
-  Box,
-  Container,
-  Row,
-  Column,
-  FooterLink,
-  Heading,
-  Content,
-  Text,
-  Copyright
-} from "./styled";
-//import Logo from '../../assets/logo1.jpg'
+import { Box, Container, Row, Column, FooterLink, Content, Copyright } from "./styled";
 import logo1 from '../../assets/img/logo1.jpg'
 
 const Footer = () => {
@@ -19,41 +7,41 @@ const Footer = () => {
     <Box>
       <Container>
         <Row>
-          <Column>
-            <Heading>SOBRE NÓS</Heading>
-       
-          </Column>
-          
+
           <Column>
             <FooterLink href="#">Ajuda</FooterLink>
-            <FooterLink href="#">Politica de privacidade</FooterLink>
-            <FooterLink href="#">Termos e condições</FooterLink>
+            <FooterLink href="#">Política de privacidade</FooterLink>
+            <FooterLink href="#">Termos e Condições</FooterLink>
           </Column>
+
           <Column>
             <FooterLink href="#">
               <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>LinkedIn</span>
+                <span>Facebook</span>
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
+                <span>Instagram</span>
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>Twitter</span>
+                <span>Twitter</span>
               </i>
             </FooterLink>
           </Column>
+
         </Row>
         <hr></hr>
+
         <Content>
           <div class="copyright">
             <Copyright>Copyright &copy; 2022 All Rights Reserved by BiblioOn</Copyright>
-			<img src={logo1} alt="logo" />
+            <img src={logo1} alt="logo" />
           </div>
         </Content>
+
       </Container>
     </Box>
   );

@@ -23,12 +23,12 @@ export const Column = styled.div`
 display: flex;
 flex-direction: column;
 text-align: left;
-margin-left: 60px;
 `;
 
 
 export const Row = styled.div`
-display: grid;
+display: flex;
+justify-content: center;
 grid-template-columns: repeat(auto-fill,
 						minmax(185px, 1fr));
 grid-gap: 20px;
@@ -41,6 +41,8 @@ grid-gap: 20px;
 export const FooterLink = styled.a`
 color: #FFFD59;
 margin-bottom: 20px;
+margin-left: 30px;
+margin-right: 30px;
 font-size: 18px;
 text-decoration: none;
 &:hover {
@@ -53,13 +55,6 @@ span {
 }
 `;
 
-export const Heading = styled.h1`
-font-size: 25px;
-color: #fff;
-margin-bottom: 40px;
-font-weight: bold;
-`;
-
 export const Content = styled.div`
 img {
     width: 19%;
@@ -68,6 +63,7 @@ img {
     display: flex;
     background: transparent;
     margin-top: 35px;
+	border-radius: 15px;
 
 }
 .copyright{

@@ -3,8 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    //background-color: whitesmoke;
-    height: 25vh; //como isso funciona?
+    height: 25vh;
 
     h1 {
         color: darkolivegreen;

@@ -7,9 +7,10 @@ import Footer from '../../components/Footer/index.js';
 
 export function Cart() {
     return (
-        
+
         <>
             <Headers>
+                
                 <Logo src={logo1} />
 
                 <ul>
@@ -23,12 +24,12 @@ export function Cart() {
             </Headers>
 
             <Container>
-        <div>
+                <div>
                     <h1>Carrinho</h1>
-        </div>
+                </div>
             </Container>
-            
-            <Footer/>
+
+            <Footer />
 
         </>
     );
