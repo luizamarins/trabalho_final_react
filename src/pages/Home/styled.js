@@ -21,7 +21,6 @@ export const MainMenu = styled.div`
 
 `;
 
->>>>>>> main
 export const Headers = styled.div`
 
     position: fixed;
