@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import { Link as BaseLink } from 'react-router-dom'
 
 /*Header*/
@@ -59,10 +59,4 @@ h1 {
     margin-top: 50px;
     color: black;
 }
-
-span {
-    display: flex;
-    color: black;
-}
-
 `;
