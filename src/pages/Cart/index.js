@@ -18,15 +18,12 @@ export function Cart() {
                     <Link to="/login">Login</Link>
                 </ul>
 
-                <div class="nav">
-                    <label for="toggle">☰</label>
-                </div>
             </Headers>
 
             <Container>
-                <div>
+        <div>
                     <h1>Carrinho</h1>
-                </div>
+        </div>
             </Container>
             
         </>

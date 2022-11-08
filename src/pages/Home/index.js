@@ -20,8 +20,6 @@ export function Home() {
                         <Link to="/login">Login</Link>
                     </ul>
 
-                    <label for="toggle">☰</label>
-
             </Headers>
 
             <Container>

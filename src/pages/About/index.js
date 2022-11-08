@@ -17,8 +17,8 @@ export function About() {
             case "Contato":
                 return (
                     <>
-                    <h1>(24) 9855-5786</h1> 
-                    <h1>biblion@gmail.com</h1>
+                    <h2>(24) 9855-5786</h2> 
+                    <h2>biblion@gmail.com</h2>
                     </>
                 );
             
@@ -31,7 +31,7 @@ export function About() {
     return (
         <Container>
                        
-            <h2>A BiblioOn</h2>
+            <h3>Quem somos</h3>
             
             <Content>
                 <header>
@@ -45,7 +45,7 @@ export function About() {
                 
             </Content>
 
-           <img src={require("../../assets/img/logo-livros.gif")} alt="foto-livros"/>
+           {/* <img src={require("../../assets/img/logo-livros.gif")} alt="foto-livros"/> */}
         
         </Container>
     )

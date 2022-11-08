@@ -32,9 +32,6 @@ export function Products() {
                     <Link to="/login">Login</Link>
                 </ul>
 
-                {/* <div class="nav">
-                    <label for="toggle">☰</label>
-                </div> */}
 
             </Headers>
 
