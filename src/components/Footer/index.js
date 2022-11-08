@@ -1,13 +1,20 @@
 import React from "react";
-import { Box, Container, Row, Column, FooterLink, Content, Copyright } from "./styled";
-import logo1 from '../../assets/img/logo1.jpg'
+import {
+  Box,
+  Container,
+  Row,
+  Column,
+  FooterLink,
+  Content,
+  Copyright,
+} from "./styled";
+import logo1 from "../../assets/img/logo1.jpg";
 
 const Footer = () => {
   return (
     <Box>
       <Container>
         <Row>
-
           <Column>
             <FooterLink href="#">Ajuda</FooterLink>
             <FooterLink href="#">Política de privacidade</FooterLink>
@@ -31,17 +38,17 @@ const Footer = () => {
               </i>
             </FooterLink>
           </Column>
-
         </Row>
         <hr></hr>
 
         <Content>
           <div class="copyright">
-            <Copyright>Copyright &copy; 2022 All Rights Reserved by BiblioOn</Copyright>
+            <Copyright>
+              Copyright &copy; 2022 All Rights Reserved by BiblioOn
+            </Copyright>
             <img src={logo1} alt="logo" />
           </div>
         </Content>
-
       </Container>
     </Box>
   );

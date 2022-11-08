@@ -1,79 +1,77 @@
-import styled from 'styled-components'
-import { Link as BaseLink } from 'react-router-dom'
+import styled from "styled-components";
+import { Link as BaseLink } from "react-router-dom";
 
 /*Header*/
 export const Headers = styled.div`
+  position: fixed;
+  background-color: #fffd59;
+  display: flex;
+  justify-content: space-between;
 
-    position: fixed;
-    background-color: #FFFD59;
-    display: flex;
-    justify-content: space-between;
-
-    ul {
-        margin: none;
-        text-align: center;
-        margin: none;
-        font-family: Oswald;
-        font-size: 1.6rem;
-        display: inline-block;
-    }
+  ul {
+    margin: none;
+    text-align: center;
+    margin: none;
+    font-family: Oswald;
+    font-size: 1.6rem;
+    display: inline-block;
+  }
 `;
 
 export const Logo = styled.img`
-
-    object-fit: scale-down;
-    width: 40%;
-    height: 40%;
-    float: left;
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 10px;
-    @media(min-width: 1000px) {
-        width: 20%;
-        height: 20%;
-    }
+  object-fit: scale-down;
+  width: 40%;
+  height: 40%;
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  @media (min-width: 1000px) {
+    width: 20%;
+    height: 20%;
+  }
 `;
 
 export const Link = styled(BaseLink)`
-
-    text-decoration: none;
-    &:hover {color: gray};
-    display: inline-flex;
-    padding: 0.5em 1.5em;
-    margin-top: 14px;
-    color: darkorchid;
+  text-decoration: none;
+  &:hover {
+    color: gray;
+  }
+  display: inline-flex;
+  padding: 0.5em 1.5em;
+  margin-top: 14px;
+  color: darkorchid;
 `;
 
 /*Meio*/
 export const Container = styled.div`
-    
-padding: 100px;
+  padding: 100px;
 
-h1 {
+  h1 {
     margin-bottom: 20px;
     margin-top: 50px;
     color: black;
-}
+  }
 
-button{
+  button {
     height: 100px;
-    width:  250px;
-    background-color: #992ECA;
+    width: 250px;
+    background-color: #992eca;
     color: white;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
     border: none;
-}
+  }
 
-input {
+  input {
     margin: 25px;
     border-radius: 10px;
     border: none;
 
     ::placeholder {
-        font-size: 30px;
-        text-align: center;
+      font-size: 30px;
+      text-align: center;
     }
-}
+  }
 `;
