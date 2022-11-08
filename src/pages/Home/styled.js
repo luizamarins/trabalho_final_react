@@ -68,5 +68,3 @@ export const Category = styled.div`
     align-items: center;
     flex-direction: column;
 `;
-
-/*Footer*/

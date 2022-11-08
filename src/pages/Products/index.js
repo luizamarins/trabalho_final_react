@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import productService from '../../services/requests/productService';
 import { Container, Logo, Link, Headers } from './styled.js'
 import logo1 from '../../assets/img/logo1.jpg'
+import Footer from '../../components/Footer';
 //import productService from '../../services/requests/productService.js'
 
 export function Products() {
@@ -30,11 +31,9 @@ export function Products() {
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/carrinho">Carrinho</Link>
                     <Link to="/login">Login</Link>
+                    <Link to="/cadastro">Cadastro</Link>
                 </ul>
 
-                {/* <div class="nav">
-                    <label for="toggle">☰</label>
-                </div> */}
 
             </Headers>
 
@@ -55,6 +54,9 @@ export function Products() {
                     })
                 }
             </Container>
+
+            <Footer/>
+
         </>
     );
 }

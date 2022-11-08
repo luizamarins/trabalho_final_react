@@ -1,6 +1,7 @@
 import { Container } from "./styled";
 import { useContext, useState } from "react";
 import AuthContext from "../../context/authentication";
+import Footer from "../../components/Footer";
 
 export function Login() {
     const { signIn } = useContext(AuthContext)
@@ -14,6 +15,21 @@ export function Login() {
 
     console.log({ user: email, password });
     return (
+
+        <>
+            <Headers>
+                <Logo src={logo1} />
+
+                <ul>
+                    <Link to="/quem-somos">Quem somos</Link>
+                    <Link to="/produtos">Produtos</Link>
+                    <Link to="/carrinho">Carrinho</Link>
+                    <Link to="/login">Login</Link>
+                    <Link to="/cadastro">Cadastro</Link>
+                </ul>
+
+            </Headers>
+
         <Container style={{
             display: "flex",
             height: '98vh',
@@ -36,5 +52,9 @@ export function Login() {
                 onClick={handleSignIn}
                 style={{ marginTop: 10, padding: 5, cursor: 'pointer' }}>entrar</button>
         </Container>
+
+        <Footer/>
+
+        </>
     );
 }
