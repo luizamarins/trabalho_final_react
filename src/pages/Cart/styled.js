@@ -1,26 +1,7 @@
 import styled from 'styled-components'
 import { Link as BaseLink } from 'react-router-dom'
 
-export const Container = styled.div`
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-`;
-
-export const MainMenu = styled.div`
-
-    margin-right: 50px;
-    margin-left: 50px;
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    height: 100%;
-    float: right;
-
-`;
-
+/*Header*/
 export const Headers = styled.div`
 
     position: fixed;
@@ -69,23 +50,13 @@ export const Link = styled(BaseLink)`
     color: darkorchid;
 `;
 
-/*Meio*/
 export const Container = styled.div`
-    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
+padding: 100px;
+
+h1 {
     margin-bottom: 50px;
-    padding: 100px;
+    margin-top: 50px;
+    color: black;
+}
 `;
-
-export const Category = styled.div`
-
-    display: inline-flex;
-    gap: 20px;
-    margin-top: 100px;
-    align-items: center;
-    flex-direction: column;
-`;
-
-/*Footer*/

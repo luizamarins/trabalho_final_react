@@ -1,8 +1,6 @@
 import {Route, Routes} from 'react-router-dom'
 import { Home } from '../pages/Home'
-import { Clients } from '../pages/Clients'
 import { Products } from '../pages/Products'
-import {Categorias} from '../pages/Categorias'
 import { PageNotFound } from '../pages/PageNotFound'
 import { About } from '../pages/About'
 //import { Login } from '../pages/Login'
@@ -26,14 +24,11 @@ export function Router() {
 
             <Route path='/' element={<Home/>}/>
             <Route path='/quem-somos' element={<About/>}/>
+            <Route path='/cadastro' element={<Cadastro/>}/>
             
-            <Route path='/clientes' element={<Clients/>}>
-                <Route path=':id' element={<Clients/>}/>
-            </Route>
-            
-            <Route path='/categorias' element={<Categorias/>}>
+            {/* <Route path='/categorias' element={<Categorias/>}>
                 <Route path=':id' element={<Categorias/>}/>
-            </Route>
+            </Route> */}
 
             <Route path='/produtos' element={<Products/>}>
                 <Route path=':id' element={<Products/>}/>

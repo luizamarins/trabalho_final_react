@@ -5,7 +5,7 @@ const getProducts = () => {
 }
 
 const postProducts = (product) => {
-    return api.post(`produto/product`, product)
+    return api.post(`produto`, product)
 }
 
 const deleteProducts = (id) => {

@@ -18,10 +18,11 @@ export const GlobalStyle = createGlobalStyle`
         background-color: white;
     }
 
-    body, input, textarea, button {
-        font-family: Oswald;
-        font-size: 3rem; //16px
+    :focus {
+        outline: transparent;
     }
 
-
-`;
+    body, input, textarea, button {
+        font-family: Oswald;
+        font-size: 3rem;
+    }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Logo, MainMenu, Link, Category, Headers } from './styled.js'
+import { Container, Logo, Link, Category, Headers } from './styled.js'
 //import { useNavigate } from 'react-router-dom'
 import logo1 from '../../assets/img/logo1.jpg'
 import { ButtonCategory } from '../../components/ButtonCategory/index.js';
@@ -8,33 +8,31 @@ import { ButtonCategory } from '../../components/ButtonCategory/index.js';
 export function Home() {
 
     // entender isso aqui:
-    
+
     // const navigate = useNavigate();
 
     // function handleGoProducts() {
     //     navigate(`/produto`, {state: {
     //     }})
     // }
-    
+
     return (
 
         <>
-
             <Headers>
 
-                <Logo src={logo1} />
+                    <Logo src={logo1} />
 
-                <ul>
-                    <Link to="/login">Login</Link>
-                    <Link to="/quem-somos">Quem somos</Link>
-                    <Link to="/produtos">Produtos</Link>
-                    <Link to="/clientes">Clientes</Link>
-                    <Link to="/carrinho">Carrinho</Link>
-                </ul>
+                    <ul>
+                        <Link to="/quem-somos">Quem somos</Link>
+                        <Link to="/produtos">Produtos</Link>
+                        <Link to="/carrinho">Carrinho</Link>
+                        <Link to="/login">Login</Link>
+                    </ul>
 
-                {/* <div class="nav">
-                    <label for="toggle">☰</label>
-                </div> */}
+                    <div class="nav">
+                        <label for="toggle">☰</label>
+                    </div>
 
             </Headers>
 
@@ -48,7 +46,6 @@ export function Home() {
                 </Category>
 
             </Container>
-
         </>
 
         /*

@@ -1,7 +1,12 @@
+import { Container } from "./styled";
+
 export function PageNotFound() {
     return (
-        <div>
-            <h1>Página não encontrada :(</h1>
-        </div>
+
+        <Container>
+            <div>
+                <h1>Página não encontrada :(</h1>
+            </div>
+        </Container>
     )
 }
