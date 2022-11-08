@@ -26,14 +26,12 @@ export function Products() {
                 <Logo src={logo1} />
 
                 <ul>
-                    <Link to="/">Home</Link>
                     <Link to="/quem-somos">Quem somos</Link>
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/carrinho">Carrinho</Link>
                     <Link to="/login">Login</Link>
                     <Link to="/cadastro">Cadastro</Link>
                 </ul>
-
 
             </Headers>
 
