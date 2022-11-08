@@ -22,7 +22,7 @@ export function Login() {
                 <Logo src={logo1} />
 
                 <ul>
-                    <Link to="/home">Home</Link>
+                    <Link to="/">Home</Link>
                     <Link to="/quem-somos">Quem somos</Link>
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/carrinho">Carrinho</Link>
