@@ -6,19 +6,19 @@ import { About } from "../pages/About";
 import { Cart } from "../pages/Cart";
 import { Cadastro } from "../pages/Cadastro";
 import { Login } from "../pages/Login";
-// import { useContext } from 'react'
-// import AuthContext from '../context/authentication'
+import { useContext } from 'react'
+import AuthContext from '../context/authentication'
 
 export function Router() {
-  // const {isAuthenticated} = useContext(AuthContext)
+  const {isAuthenticated} = useContext(AuthContext)
 
-  // if (!isAuthenticated) {
-  //     return (
-  //         <Routes>
-  //             <Route path="/" element={<Login/>}/>
-  //         </Routes>
-  //     )
-  // }
+  if (!isAuthenticated) {
+      return (
+          <Routes>
+              <Route path="/" element={<Login/>}/>
+          </Routes>
+      )
+  }
 
   return (
     <Routes>
